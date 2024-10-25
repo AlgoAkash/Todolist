@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #1e1e1e, #111);
+    color: #e0e0e0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: 0 8px 32px rgba(85, 255, 175, 0.7);
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .todo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #todo-input:hover {
+    box-shadow: 0px 0px 10px rgba(85, 255, 175, 0.7);
+  }
+  
+  button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #55ffaa;
+    color: #111;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45e6a0;
+    box-shadow: 0px 0px 15px rgba(85, 255, 175, 0.8);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #todo-list li, #completed-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  #todo-list li:hover, #completed-list li:hover {
+    background: rgba(85, 255, 175, 0.2);
+    box-shadow: 0 4px 12px rgba(85, 255, 175, 0.6);
+  }
+  
+  .delete-btn, .complete-btn {
+    cursor: pointer;
+    color: #ff5c5c;
+  }
+  
+  .complete-btn {
+    color: #55ffaa;
+  }
+  
+  .delete-btn:hover {
+    color: #ff8888;
+  }
+  
+  .complete-btn:hover {
+    color: #45e6a0;
+  }
+  
